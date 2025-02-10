@@ -26,8 +26,8 @@ function Genre() {
           (item, index) =>
             index <= 4 && (
                 <div className={styles.GenreItem}>
-                    <h2>
-                        {item.name}
+                    <h2> 
+                      {item.name}  
                     </h2>
                     <MovieList genreID={String(item.id)} />
                 </div> 
