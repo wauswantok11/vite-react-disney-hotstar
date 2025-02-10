@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import ApiMovieDB from "../../service/ApiMoviedb";
 import { GenreDTO } from "../../service/GennersListDTO";
-const IMAGE_URL = "https://image.tmdb.org/t/p/original";
 import MovieList from "./MovieList/MovieList"
 import styles from "./Genre.module.scss"
 function Genre() {
@@ -31,7 +30,6 @@ function Genre() {
                         {item.name}
                     </h2>
                     <MovieList genreID={String(item.id)} />
-
                 </div> 
             )
         )}
