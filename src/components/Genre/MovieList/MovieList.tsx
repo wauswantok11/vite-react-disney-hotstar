@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import service from "../../../service/ApiMoviedb";
-import { DiscoverListDTO } from "../../../service/discoverListDTO";
+import { DiscoverListDTO } from "../../../service/DiscoverListDTO";
 const IMAGE_URL = "https://image.tmdb.org/t/p/original";
 import styles from "./MovieList.module.scss";
 interface MovieListProps {
