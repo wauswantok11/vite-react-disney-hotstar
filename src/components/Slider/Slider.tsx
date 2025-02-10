@@ -16,7 +16,7 @@ function Slider() {
       console.log('response.results', response.results)
       setMovieList(response.results);
     } catch (error) {
-      console.error("Error fetching movies:", error);
+      console.log("Error fetching movies:", error);
     }
   };
 

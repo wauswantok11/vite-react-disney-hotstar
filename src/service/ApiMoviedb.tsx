@@ -16,7 +16,7 @@ const fetchTrendingMovies = async (): Promise<TrendingMoviesDTO> => {
     }); 
     return response.data as TrendingMoviesDTO;
   } catch (error) {
-    console.error("Error fetching trending movies:", error);
+    console.log("Error fetching trending movies:", error);
     throw error;
   }
 };
@@ -30,7 +30,7 @@ const fetchGenreMovies =async ():  Promise<TrendingGenresDTO> => {
         Authorization: API_TOKEN,
       },
     }); 
-    console.error("response.data:", response.data);
+
     return response.data as TrendingGenresDTO;
   } catch (error) {
     console.error("Error fetching genre movies:", error);
@@ -47,7 +47,6 @@ const fetchMoviesListPoster = async (id : string): Promise<DiscoverListDTO> =>{
         Authorization: API_TOKEN,
       },
     }); 
-    console.error("response.data:", response.data);
     return response.data as DiscoverListDTO;
   } catch (error) {
     console.error("Error fetching genre movies:", error);

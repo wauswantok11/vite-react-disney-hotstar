@@ -11,7 +11,7 @@ function Genre() {
       console.log("response.results", response);
       setGenreList(response.genres);
     } catch (error) {
-      console.error("Error fetching movies:", error);
+      console.log("Error fetching movies:", error);
     }
   };
 
