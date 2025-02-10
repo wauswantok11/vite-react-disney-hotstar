@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Liter&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.GenreList{
+    padding: 32px; /* p-8 (8 * 4px) */
+
+    & .GenreItem{
+        font-weight: bold;
+        font-size: 20px;
+        color: #fff;
+        font-family: "IBM Plex Sans Condensed", serif;
+
+    }
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+    .GenreList {
+        padding-left: 64px; /* md:px-16 (16 * 4px) */
+        padding-right: 64px;
+    }
+}

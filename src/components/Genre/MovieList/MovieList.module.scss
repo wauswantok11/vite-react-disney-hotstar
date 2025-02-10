@@ -1,0 +1,28 @@
+.MoviePosterList {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 1rem 2rem;
+    & .MoviePosterItem {
+        margin-left: 20px;
+        margin-right: 20px;
+        & img {
+       
+            width: 200px; 
+            height: 300px;
+            min-width: 100%;
+            object-fit: cover;
+
+        }
+
+    }
+}
+
+@media (min-width: 768px) {
+    .MoviePosterList {
+        & .MoviePosterItem {
+            width: 200px;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+#root {
+  max-width: 100%;
+  margin: 0px 40px;
+}
+body {
+  max-height: 100vh;
+  height: 100vh;
+  background-color: #131520;
+}

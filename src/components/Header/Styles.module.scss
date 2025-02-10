@@ -1,0 +1,64 @@
+.HeaderWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & .HeaderIconUser {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
+
+    & .HeaderContent {
+        display: flex;
+        align-items: center;
+
+        & .HeaderMenu {
+            display: flex;
+            align-items: center;
+            margin-left: 50px; 
+        }
+      
+    }
+
+    & .ListMenu, .MobileIcon {
+        padding: 20px;
+        color: #fff; 
+        font-size: 18px;
+        font-family: "IBM Plex Sans Condensed", serif;
+        font-weight: 700;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        width: auto;
+
+        & p {
+            margin-left: 15px;
+        }
+
+        &:hover {
+            text-underline-offset: 10px;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .MobHeaderMenu, .MobileIcon{
+        display: none !important;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .MobHeaderMenu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 30px;
+    
+     }
+    .HeaderMenu{
+        display: none !important;
+    }
+}
