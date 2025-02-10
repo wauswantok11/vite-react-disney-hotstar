@@ -13,10 +13,10 @@ function Slider() {
   const getTrendingMovies = async () => {
     try {
       const response = await ApiMovieDB.fetchTrendingMovies();
-      console.log('response.results', response.results)
       setMovieList(response.results);
     } catch (error) {
-      console.log("Error fetching movies:", error);
+      console.error("Error fetching movies:", error);
+      throw error
     }
   };
 

@@ -13,8 +13,9 @@ const MovieList: React.FC<MovieListProps> = ({ genreID }) => {
     try {
       const response = await service.fetchMoviesListPoster(id);
       setMovies(response);
-    } catch (err) {
-      console.log("Error fetching movies:", err);
+    } catch (error) {
+      console.error("Error fetching movies:", error);
+      throw error
     }
   };
   useEffect(() => {

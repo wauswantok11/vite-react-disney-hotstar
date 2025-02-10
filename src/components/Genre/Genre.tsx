@@ -8,10 +8,10 @@ function Genre() {
   const getGenreMovies = async () => {
     try {
       const response = await ApiMovieDB.fetchGenreMovies();
-      console.log("response.results", response);
       setGenreList(response.genres);
     } catch (error) {
-      console.log("Error fetching movies:", error);
+      console.error("Error fetching movies:", error);
+      throw error
     }
   };
 

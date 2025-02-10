@@ -16,7 +16,7 @@ const fetchTrendingMovies = async (): Promise<TrendingMoviesDTO> => {
     }); 
     return response.data as TrendingMoviesDTO;
   } catch (error) {
-    console.log("Error fetching trending movies:", error);
+    console.error("Error fetching trending movies:", error);
     throw error;
   }
 };
