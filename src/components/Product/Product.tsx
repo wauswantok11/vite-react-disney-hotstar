@@ -38,7 +38,7 @@ function Product() {
         {ProductList.map((item) => (
           <div className={styles.ProductItem} key={item.id}>
             <img src={item.image} alt={item.name} className={styles.ProductImage} />
-            <video src={item.video} className={styles.ProductVideo} loop autoPlay playsInline  muted />
+            <video src={item.video} className={styles.ProductVideo} loop autoPlay playsInline  muted  controls />
           </div>
         ))}
       </div>
